@@ -50,6 +50,8 @@ public class Song implements Content {
         return "Song{" +
                 "title='" + title + '\'' +
                 ", artist='" + artist + '\'' +
+                ", rating='" + getRating() + '\'' +
                 '}';
     }
+
 }

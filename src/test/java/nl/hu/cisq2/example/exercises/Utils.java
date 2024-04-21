@@ -1,4 +1,4 @@
-package nl.hu.cisq2.exercises;
+package nl.hu.cisq2.example.exercises;
 
 import java.util.List;
 

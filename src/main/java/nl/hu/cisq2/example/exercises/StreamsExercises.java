@@ -4,11 +4,13 @@ import nl.hu.cisq2.example.domain.Content;
 import nl.hu.cisq2.example.domain.Movie;
 
 import java.util.List;
+import java.util.Optional;
+
 
 public class StreamsExercises {
 
     // gebruik .map()
-    public static List<Content> getAllTitles(List<Content> content) {
+    public static List<String> getAllTitles(List<Content> content) {
         return null;
     }
 
@@ -27,11 +29,17 @@ public class StreamsExercises {
         return 0;
     }
 
-    // use findFirst() of findAny()
-    public static <T extends Content> Content getContentWithRatingOff(int rating, List<T> contentList) {
+    // gebruik filter()
+    public static <T extends Content> List<T> getAllContentWithRating(int rating, List<T> contentList) {
         return null;
     }
 
+    // use findFirst() of findAny()
+    public static <T extends Content> Optional<T> getContentWithRatingOff(int rating, List<T> contentList) {
+        return null;
+    }
+
+    // use sorted()
     public static <T extends Content> List<T> getContentSortedByTitle(List<T> content) {
         return null;
     }
@@ -40,23 +48,25 @@ public class StreamsExercises {
         return null;
     }
 
+    // Returns true if all ratings are higher than given rating
     // gebruik allMatch()
-    public static <T extends Content> boolean allRatingsHigherThan(int rating, List<T> content) {
+    public static <T extends Content> boolean allRatingsHigherThan(int rating, List<T> contentList) {
         return false;
     }
 
     // gebruik noneMatch()
-    public static <T extends Content> boolean noRatingLowerThan(int rating, List<T> content) {
+    public static <T extends Content> boolean noRatingLowerThan(int rating, List<T> contentList) {
         return false;
     }
 
     // gebruik anyMatch()
-    public static <T extends Content> boolean anyRatingHigherThan(int rating, List<T> content) {
+    public static <T extends Content> boolean anyRatingHigherThan(int rating, List<T> contentList) {
         return false;
     }
 
+    // Returns true als beide lijsten dezelfde movies in dezelfde volgorde bevatten.
     // gebruik IntStream.range()
-    public static boolean compareMovieLists(List<Movie> list1, List<Movie> list2) {
+    public static boolean movieListsAreEqual(List<Movie> list1, List<Movie> list2) {
         return false;
     }
 

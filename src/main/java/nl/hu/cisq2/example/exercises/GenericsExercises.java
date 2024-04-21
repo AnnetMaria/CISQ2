@@ -1,5 +1,10 @@
 package nl.hu.cisq2.example.exercises;
 
+import nl.hu.cisq2.example.domain.Content;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class GenericsExercises {
 
     // 1. Schrijf een static method in de GenericExercises class die zowel een List<Content>,

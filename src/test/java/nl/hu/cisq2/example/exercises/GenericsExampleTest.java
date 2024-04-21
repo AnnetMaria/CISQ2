@@ -1,10 +1,12 @@
-package nl.hu.cisq2.exercises;
+package nl.hu.cisq2.example.exercises;
 
 import nl.hu.cisq2.example.domain.Artist;
 import nl.hu.cisq2.example.domain.MockContent;
+import nl.hu.cisq2.example.domain.Song;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 class GenericsExampleTest {
@@ -29,6 +31,15 @@ class GenericsExampleTest {
         // Collections.sort(artists);
 
         Utils.printList(artists);
+    }
+
+    @Test
+    void testSortWithSongObject() {
+        List<Song> songs = MockContent.getPopularSongs();
+
+        // Collections.sort(songs);
+
+        Utils.printList(songs);
     }
 
 

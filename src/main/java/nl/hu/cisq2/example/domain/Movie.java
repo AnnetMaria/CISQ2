@@ -50,6 +50,7 @@ public class Movie implements Content {
         return "Movie{" +
                 "title='" + title + '\'' +
                 ", year='" + year + '\'' +
+                ", rating='" + getRating() + '\'' +
                 '}';
     }
 }

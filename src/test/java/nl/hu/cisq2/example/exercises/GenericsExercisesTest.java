@@ -1,7 +1,6 @@
-package nl.hu.cisq2.exercises;
+package nl.hu.cisq2.example.exercises;
 
 import nl.hu.cisq2.example.domain.*;
-import nl.hu.cisq2.example.exercises.CheckAnswerUtils;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
