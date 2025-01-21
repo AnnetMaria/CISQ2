@@ -2,7 +2,7 @@ package nl.hu.cisq2.example.domain;
 
 import java.util.Objects;
 
-public class Song implements Content {
+public class Song implements Content, Comparable<Content> {
 
     private final String title;
 
@@ -54,4 +54,8 @@ public class Song implements Content {
                 '}';
     }
 
+    @Override
+    public int compareTo(Content o) {
+        return 0;
+    }
 }

@@ -15,7 +15,7 @@ class GenericsExampleTest {
     void testSortWithString() {
         List<String> popularArtists = MockContent.getPopularArtists();
 
-        // Collections.sort(popularArtists);
+        Collections.sort(popularArtists);
 
         Utils.printList(popularArtists);
     }
@@ -28,7 +28,7 @@ class GenericsExampleTest {
             artists.add(new Artist(artist));
         }
 
-        // Collections.sort(artists);
+        Collections.sort(artists);
 
         Utils.printList(artists);
     }

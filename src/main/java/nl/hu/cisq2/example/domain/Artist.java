@@ -1,6 +1,6 @@
 package nl.hu.cisq2.example.domain;
 
-public class Artist {
+public class Artist implements Comparable<Artist> {
 
     private final String name;
 
@@ -17,5 +17,10 @@ public class Artist {
         return "Artist{" +
                 "name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Artist o) {
+        return 0;
     }
 }

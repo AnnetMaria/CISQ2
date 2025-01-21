@@ -6,7 +6,6 @@ import nl.hu.cisq2.example.domain.Movie;
 import java.util.List;
 import java.util.Optional;
 
-
 public class StreamsExercises {
 
     // gebruik .map()
